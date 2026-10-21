@@ -1,0 +1,64 @@
+﻿<!-- 
+    Plik: MainWindow.xaml
+    Opis: Główny interfejs graficzny aplikacji WPF. 
+    Zawiera panel z przyciskami do modyfikacji licznika oraz przycisk otwierający drugie okno.
+-->
+<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <!-- Główny kontener układający elementy pionowo na środku ekranu -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <!-- Przycisk zmniejszający licznik o 1 -->
+            <Button
+                x:Name="DecrementBtn"
+                Content="Odejmij 1"
+                Margin="0,0,0,10"
+                Click="DecrementBtn_Click">
+            </Button>
+
+            <!-- Przycisk zwiększający licznik o 1 -->
+            <Button
+                x:Name="IncrementBtn"
+                Content="Dodaj 1"
+                Margin="0,0,0,10"
+                Click="IncrementBtn_Click">
+            </Button>
+
+            <!-- Przycisk zwiększający licznik o 2 -->
+            <Button
+                x:Name="IncrementTwoBtn"
+                Content="Dodaj 2"
+                Margin="0,0,0,10"
+                Click="IncrementTwoBtn_Click">
+            </Button>
+
+            <!-- Przycisk mnożący wartość licznika przez 2 -->
+            <Button
+                x:Name="MultiplyBtn"
+                Content="Pomnóż przez 2"
+                Margin="0,0,0,10"
+                Click="MultiplyBtn_Click">
+            </Button>
+
+            <!-- Przycisk inicjujący otwarcie nowego, drugiego okna -->
+            <Button
+                x:Name="OpenWindowBtn"
+                Content="Otwórz drugie okno"
+                Margin="0,0,0,20"
+                Click="OpenWindowBtn_Click">
+            </Button>
+
+            <!-- Etykieta tekstowa wyświetlająca aktualny stan licznika -->
+            <TextBlock
+                x:Name="CounterBlock"
+                FontSize="20"
+                Text="0"
+                TextAlignment="Center">
+            </TextBlock>
+
+        </StackPanel>
+    </Grid>
+</Window>

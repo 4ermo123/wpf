@@ -1,0 +1,16 @@
+<!-- 
+    Plik: SecondWindow.xaml
+    Opis: Interfejs graficzny dla drugiego, dodatkowego okna aplikacji.
+-->
+<Window x:Class="WpfApp1.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Drugie Okno" Height="200" Width="300">
+    <Grid>
+        <!-- Informacyjny tekst umieszczony centralnie w drugim oknie -->
+        <TextBlock Text="Cześć! To jest drugie okno." 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   FontSize="16"/>
+    </Grid>
+</Window>
